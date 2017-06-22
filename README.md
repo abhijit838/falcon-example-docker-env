@@ -6,7 +6,7 @@ App can be run from command line using docker and without docker
     * Install git
     * Install docker 
     * Install docker-compose
-    $ git clone <url>
+    $ git clone https://github.com/abhijit838/falcon-example-docker-env.git
     * Change directory to project root directory
     $ docker-compose up
     
