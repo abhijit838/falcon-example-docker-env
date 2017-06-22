@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  falcon-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: falcon-demo
+    ports:
+      - 8081:8080
+    volumes:
+      - ./:/code
+    entrypoint: gunicorn api.wsgi:app --bind 0.0.0.0:8080 --workers 3 --reload
