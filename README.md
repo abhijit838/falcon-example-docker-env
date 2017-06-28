@@ -14,4 +14,5 @@ App can be run from command line using docker and without docker
     * Install git
     $ git clone <url>
     * Change directory to project root directory
+    & pip install -r requirements.txt
     $ gunicorn api.wsgi:app --bind 0.0.0.0:8080 --workers 3 --reload
